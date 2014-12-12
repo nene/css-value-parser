@@ -1,0 +1,15 @@
+{
+  "name": "css-property-value-parser",
+  "desription": "Simple parser for values of CSS properties",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nene/css-property-value-parser"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "gulp": "^3.8.10",
+    "gulp-mocha": "^2.0.0"
+  }
+}
