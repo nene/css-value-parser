@@ -33,7 +33,7 @@ describe("css-property-value-parser", function(){
             ["/", [{type: "operator", value: "/"}]],
             ["+", [{type: "operator", value: "+"}]],
             ["*", [{type: "operator", value: "*"}]],
-            //["-", [{type: "operator", value: "-"}]],
+            ["-", [{type: "operator", value: "-"}]],
             // Colors
             ["#f0f", [{type: "color", value: "#f0f"}]],
             ["#AAA", [{type: "color", value: "#AAA"}]],
