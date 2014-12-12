@@ -53,34 +53,24 @@ describe("css-property-value-parser", function(){
             ]}]],
             ["rgb(255,255,0)", [{type: "function", name: "rgb", params: [
                 {type: "number", value: 255},
-                {type: "operator", value: ","},
                 {type: "number", value: 255},
-                {type: "operator", value: ","},
                 {type: "number", value: 0},
             ]}]],
             ["rgba(10%, 50%, 100%, 0.5)", [{type: "function", name: "rgba", params: [
                 {type: "percentage", value: 10},
-                {type: "operator", value: ","},
                 {type: "percentage", value: 50},
-                {type: "operator", value: ","},
                 {type: "percentage", value: 100},
-                {type: "operator", value: ","},
                 {type: "number", value: 0.5},
             ]}]],
             ["hsl( 10%, 50%, 100% )", [{type: "function", name: "hsl", params: [
                 {type: "percentage", value: 10},
-                {type: "operator", value: ","},
                 {type: "percentage", value: 50},
-                {type: "operator", value: ","},
                 {type: "percentage", value: 100},
             ]}]],
             ["hsla( 128 , 128 , 128 , 0.7 )", [{type: "function", name: "hsla", params: [
                 {type: "number", value: 128},
-                {type: "operator", value: ","},
                 {type: "number", value: 128},
-                {type: "operator", value: ","},
                 {type: "number", value: 128},
-                {type: "operator", value: ","},
                 {type: "number", value: 0.7},
             ]}]],
             ["url('http://example.com')", [{type: "function", name: "url", params: [
@@ -98,21 +88,15 @@ describe("css-property-value-parser", function(){
             ["-webkit-gradient(linear, color-stop(0%,#CCC), color-stop(100%,rgb(0,0,0)))", [
                 {type: "function", name: "-webkit-gradient", params: [
                     {type: "identifier", value: "linear"},
-                    {type: "operator", value: ","},
                     {type: "function", name: "color-stop", params: [
                         {type: "percentage", value: 0},
-                        {type: "operator", value: ","},
                         {type: "color", value: "#CCC"},
                     ]},
-                    {type: "operator", value: ","},
                     {type: "function", name: "color-stop", params: [
                         {type: "percentage", value: 100},
-                        {type: "operator", value: ","},
                         {type: "function", name: "rgb", params: [
                             {type: "number", value: 0},
-                            {type: "operator", value: ","},
                             {type: "number", value: 0},
-                            {type: "operator", value: ","},
                             {type: "number", value: 0},
                         ]},
                     ]},
