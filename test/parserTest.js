@@ -40,6 +40,9 @@ describe("css-property-value-parser", function(){
             ["#33a1F9", [{type: "color", value: "#33a1F9"}]],
             ["green", [{type: "color", value: "green"}]],
             ["aliceblue", [{type: "color", value: "aliceblue"}]],
+            // CSS2 system colors aren't recognized as colors
+            ["background", [{type: "identifier", value: "background"}]],
+            ["window", [{type: "identifier", value: "window"}]],
             // Identifiers
             ["inherit", [{type: "identifier", value: "inherit"}]],
             ["pre-wrap", [{type: "identifier", value: "pre-wrap"}]],
