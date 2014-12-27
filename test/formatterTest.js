@@ -1,7 +1,7 @@
 var parser = require("../index");
 var expect = require("chai").expect;
 
-describe("css-property-value-parser", function(){
+describe("css-value-parser", function(){
     describe("formats value", function(){
         var tests = [
             // Dimensions
